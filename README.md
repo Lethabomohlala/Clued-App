@@ -2,6 +2,8 @@
 
 <h1> Youtube video link </h1>
 Watch the following video to understand how Clued works:
+https://youtu.be/Kb-r-7KzLiU?si=JXqg6yKf4j-k_dQ0
+
 <h1> Author </h1>
 <ul style="list-style-type: square;">
 <li>Lethabo Moganedi</li>
