@@ -49,12 +49,6 @@ class ReviewActivity : AppCompatActivity() {
         tvCorrectAnswer.text = if (question.isTrue) getString(R.string.txt_true) else getString(R.string.txt_false)
         tvExplanation.text = getString(R.string.explanation_prefix) + question.explanation
 
-        val colorGreen = ContextCompat.getColor(this, R.color.green)
-        val colorPink = ContextCompat.getColor(this, R.color.pink)
-
-        tvUserAnswer.setTextColor(if (userAnswer == question.isTrue) colorGreen else colorPink)
-        tvCorrectAnswer.setTextColor(if (question.isTrue) colorGreen else colorPink)
-
         container.addView(view)
     }
 }

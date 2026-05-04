@@ -54,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_weight="1"
             android:padding="16dp">
 
             <TextView
@@ -87,7 +88,9 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="300dp"
-                android:layout_height="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:layout_marginTop="16dp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/question_image_desc"

@@ -7,7 +7,7 @@
         <item>HEALTH &amp; WELLNESS</item>
         <item>PRODUCTIVITY</item>
     </string-array>
-    <string name="question_progress_format">Question %1$d of %2$d</string>
+    <string name="question_progress_format">%1$d of %2$d</string>
     <string name="results_score_format">%1$d / %2$d</string>
     <string name="txt_statement">STATEMENT</string>
     <string name="hack_or_myth_prompt">HACK OR MYTH?</string>
@@ -36,6 +36,6 @@
     <string name="correct_answer_prefix">CORRECT ANSWER: </string>
     <string name="explanation_prefix">EXPLANATION: </string>
     <string name="btn_back_to_results">BACK TO RESULTS</string>
-    <string name="txt_true">TRUE</string>
-    <string name="txt_false">FALSE</string>
+    <string name="txt_true">HACK</string>
+    <string name="txt_false">MYTH</string>
 </resources>

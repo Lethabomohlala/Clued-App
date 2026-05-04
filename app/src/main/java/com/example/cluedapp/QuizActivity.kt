@@ -36,10 +36,13 @@ class QuizActivity : AppCompatActivity() {
         btnHack = findViewById(R.id.btnHack)
         btnMyth = findViewById(R.id.btnMyth)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.quiz)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        val btnSubmit: Button = findViewById(R.id.btnSubmit)
+        btnSubmit.setOnClickListener {
+            if (currentIndex >= questions.size) {
+                showResult()
+            } else {
+                Toast.makeText(this, "Please answer all questions first!", Toast.LENGTH_SHORT).show()
+            }
         }
 
         val selectedTopic = intent.getStringExtra("SELECTED_TOPIC") ?: ""
@@ -93,9 +96,13 @@ class QuizActivity : AppCompatActivity() {
         }
 
         currentIndex++
-        loadQuestion()
-    }
 
+        if (currentIndex >= questions.size) {
+            showResult()
+        } else {
+            loadQuestion()
+        }
+    }
     private fun showResult() {
         val intent = Intent(this, ResultsActivity::class.java)
         intent.putExtra("SCORE", score)
