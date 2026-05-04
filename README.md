@@ -101,9 +101,9 @@ Clued uses interactive quizzes with instant feedback to help users tell myths fr
 
 
 <h1> References</h1>
-<i>Google. 2026. Gemini (AI assistant). [Software] Available at: https://ai.google.dev/ [Accessed 3 April 2026].</i>
+<i>Google. 2026. Gemini (AI assistant). [Software] Available at: https://ai.google.dev/ [Accessed 3 May 2026].</i>
 
-<i>OpenAI. 2026. ChatGPT (GPT-5.3). [Large language model]. Available at: https://chat.openai.com [Accessed 3 April 2026].</i>
+<i>OpenAI. 2026. ChatGPT (GPT-5.3). [Large language model]. Available at: https://chat.openai.com [Accessed 3 May 2026].</i>
 
 
 
