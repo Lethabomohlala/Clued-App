@@ -23,6 +23,7 @@ class QuizActivity : AppCompatActivity() {
     private var currentIndex = 0
     private var score = 0
     private var currentCategory = "Health"
+    private val userAnswers = mutableListOf<Boolean>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,6 +82,7 @@ class QuizActivity : AppCompatActivity() {
     private fun checkAnswer(userAnswer: Boolean) {
         if (currentIndex >= questions.size) return
 
+        userAnswers.add(userAnswer)
         val correctAnswer = questions[currentIndex].isTrue
 
         if (userAnswer == correctAnswer) {
@@ -98,7 +100,14 @@ class QuizActivity : AppCompatActivity() {
         val intent = Intent(this, ResultsActivity::class.java)
         intent.putExtra("SCORE", score)
         intent.putExtra("TOTAL", questions.size)
+        
+        // Pass question IDs and user answers
+        val questionIds = questions.map { it.id }.toIntArray()
+        val answers = userAnswers.toBooleanArray()
+        intent.putExtra("QUESTION_IDS", questionIds)
+        intent.putExtra("USER_ANSWERS", answers)
+        
         startActivity(intent)
-        finish() // Finish QuizActivity so the user can't go back to the quiz
+        finish()
     }
 }

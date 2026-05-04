@@ -88,6 +88,7 @@
             android:stateListAnimator="@animator/lift_on_touch">
 
             <TextView
+                android:id="@+id/tvCorrectCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/score_placeholder"
@@ -120,6 +121,7 @@
             android:stateListAnimator="@animator/lift_on_touch">
 
             <TextView
+                android:id="@+id/tvIncorrectCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/score_placeholder"

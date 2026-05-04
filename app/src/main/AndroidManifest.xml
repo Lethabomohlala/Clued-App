@@ -28,6 +28,10 @@
             android:name=".QuizActivity"
             android:exported="false"
             android:theme="@style/Theme.CluedApp" />
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CluedApp" />
     </application>
 
 </manifest>

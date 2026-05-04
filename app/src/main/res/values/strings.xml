@@ -30,4 +30,12 @@
     <string name="select_topic">SELECT A TOPIC</string>
     <string name="btn_begin_quiz">BEGIN QUIZ</string>
     <string name="topic_household_cleaning">HOUSEHOLD &amp; CLEANING</string>
+    <string name="review_answers_title">REVIEW ANSWERS</string>
+    <string name="question_number_format">QUESTION %1$d</string>
+    <string name="you_answered_prefix">YOU ANSWERED: </string>
+    <string name="correct_answer_prefix">CORRECT ANSWER: </string>
+    <string name="explanation_prefix">EXPLANATION: </string>
+    <string name="btn_back_to_results">BACK TO RESULTS</string>
+    <string name="txt_true">TRUE</string>
+    <string name="txt_false">FALSE</string>
 </resources>
