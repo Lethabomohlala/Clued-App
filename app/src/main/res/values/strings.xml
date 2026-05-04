@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Clued</string>
+    <string name="welcome_description">Clued is a quiz-based app that helps users distinguish between myths and life hacks by presenting real-life scenarios, giving instant feedback, and providing explanations.</string>
+    <string name="welcome_into">Ever been confused whether what you\'re told is a myth or a life hack? Well…Clued is your solution!</string>
+    <string-array name="quiz_topics">
+        <item>HOUSEHOLD &amp; CLEANING</item>
+        <item>HEALTH &amp; WELLNESS</item>
+        <item>PRODUCTIVITY</item>
+    </string-array>
+    <string name="question_progress_format">Question %1$d of %2$d</string>
+    <string name="results_score_format">%1$d / %2$d</string>
+    <string name="txt_statement">STATEMENT</string>
+    <string name="hack_or_myth_prompt">HACK OR MYTH?</string>
+    <string name="btn_hack">HACK</string>
+    <string name="btn_myth">MYTH</string>
+    <string name="clued_logo_desc">Clued Logo</string>
+    <string name="question_image_desc">Question Image</string>
+    <string name="back_button_desc">Back</string>
+</resources>

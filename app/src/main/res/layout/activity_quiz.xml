@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F1ED"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".QuizActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="42dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/clued_logo_desc"
+        android:src="@drawable/ic_clued" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:minHeight="24dp"
+        android:maxHeight="24dp"
+        android:max="100"
+        android:progress="10"
+        android:progressTint="#FF9800" />
+
+    <TextView
+        android:id="@+id/txtProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="end"
+        android:textStyle="bold"
+        tools:text="1 of 10" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/questionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_statement"
+                android:layout_gravity="center"
+                android:textColor="#FF000000"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                tools:text="Regular exercise can improve mental health." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/hack_or_myth_prompt"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#F26B3A" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/question_image_desc"
+                app:srcCompat="@drawable/detective_3" />
+
+            <Button
+                android:id="@+id/btnHack"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_button_green"
+                app:backgroundTint="@null"
+                android:text="@string/btn_hack"
+                android:textColor="#FFFFFF"
+                android:elevation="3dp"
+                android:stateListAnimator="@animator/lift_on_touch" />
+
+            <Button
+                android:id="@+id/btnMyth"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_button_pink"
+                app:backgroundTint="@null"
+                android:text="@string/btn_myth"
+                android:textColor="#FFFFFF"
+                android:elevation="3dp"
+                android:stateListAnimator="@animator/lift_on_touch" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_button_yellow"
+        app:backgroundTint="@null"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:elevation="3dp"
+        android:stateListAnimator="@animator/lift_on_touch" />
+
+</LinearLayout>
