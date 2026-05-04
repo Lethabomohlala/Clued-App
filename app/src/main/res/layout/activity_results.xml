@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DCE9FE"
+    android:background="@color/light_blue"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="20dp">
@@ -13,19 +13,21 @@
         android:layout_height="48dp"
         android:layout_marginTop="42dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/clued_logo_desc"
         android:src="@drawable/ic_clued" />
 
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="32dp"
+        android:contentDescription="@string/detective_image_desc"
         android:src="@drawable/detective_1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="CASE CLOSED!"
+        android:text="@string/case_closed"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -42,24 +44,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="YOUR SCORE"
-            android:textColor="#757575"
+            android:text="@string/your_score"
+            android:textColor="@color/grey"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 / 10"
-            android:textColor="#F26B3A"
+            android:text="@string/results_score_format"
+            android:textColor="@color/orange"
             android:textSize="40sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GOOD JOB, DETECTIVE!"
-            android:textColor="#F26B3A"
+            android:text="@string/good_job_detective"
+            android:textColor="@color/orange"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -67,6 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -87,16 +90,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textColor="#FFF"
+                android:text="@string/score_placeholder"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CORRECT"
-                android:textColor="#FFF"
+                android:text="@string/txt_correct"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -119,16 +122,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textColor="#FFF"
+                android:text="@string/score_placeholder"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="INCORRECT"
-                android:textColor="#FFF"
+                android:text="@string/txt_incorrect"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -143,8 +146,8 @@
         app:backgroundTint="@null"
         android:elevation="3dp"
         android:stateListAnimator="@animator/lift_on_touch"
-        android:text="TRY AGAIN"
-        android:textColor="#FFFFFF" />
+        android:text="@string/btn_try_again"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/btnReview"
@@ -155,8 +158,8 @@
         app:backgroundTint="@null"
         android:elevation="2dp"
         android:stateListAnimator="@animator/lift_on_touch"
-        android:text="REVIEW ANSWERS"
-        android:textColor="#000" />
+        android:text="@string/btn_review_answers"
+        android:textColor="@color/black" />
 
     <Button
         android:id="@+id/btnHome"
@@ -168,7 +171,7 @@
         app:backgroundTint="@null"
         android:elevation="3dp"
         android:stateListAnimator="@animator/lift_on_touch"
-        android:text="BACK TO HOME"
-        android:textColor="#FFFFFF" />
+        android:text="@string/btn_back_to_home"
+        android:textColor="@color/white" />
 
 </LinearLayout>

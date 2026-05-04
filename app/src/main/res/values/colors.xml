@@ -15,4 +15,6 @@
     <color name="yellow">#FEBE27</color>
     <color name="light_blue">#DCE9FE</color>
     <color name="charcoal">#302F34</color>
+    <color name="progress_orange">#FF9800</color>
+    <color name="grey">#757575</color>
 </resources>
